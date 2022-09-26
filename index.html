@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="icon" href="../Contenido/icono.ico" />
+
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <div class="logo">
+          <img src="../Contenido/Logo.svg" alt="logo de alura">
+        </div>
+      </div>
+      <div class="bienvenida">
+          <h1>Welcome</h1>
+      </div>
+    </header>
+    <main>
+      <section class = "input">
+        <textarea class = "textoEncriptado" placeholder="   Ingrese el texto aqui..."></textarea>
+      </section>
+      <section class="output">
+        <textarea class ="textoDesencriptado" readonly></textarea>
+      </section>
+      <section class="buttons">
+        <input type="image" src = "../Contenido/advertencia.svg" class="warning"></input>
+        <div class = "botonesPrincipales">
+          <button class = "botonEncriptar" onclick="encriptarTexto()"> Encriptar</button>
+          <button class = "botonDesencriptar" onclick="desencriptarTexto()"> Desencriptar</button>
+        </div>
+        <div class = "copyButton">
+          <button class = "botonCopiar" onclick="copiarContenido()"> Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script1.js"></script>
+  </body>
+</html>
